@@ -1,0 +1,21 @@
+= Poiyer
+
+Poiyer is a JRuby wrapper for the Apache POI Project. Its goal is to provide a more ruby like interface for developers. 
+
+Additionally, convience methods such as writing to a row with an array and auto sizing all the columns of a sheet are available.
+
+Currently only Excel funcationality is supported.
+
+== Using Poiyer
+
+    require 'poiyer'
+    wb = Poiyer::Excel::Workbook.new
+    ws = wb.add_worksheet("New Sheet")
+
+= Compatibility
+
+Poiyer's implementation mimicks some of the functionality found in the spreadsheet gem.  
+
+= Inspiration
+
+Many of the design choices are inspired by FasterCSV.
